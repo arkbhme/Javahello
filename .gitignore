@@ -1,4 +1,3 @@
-DS File
 # Ignora archivos del sistema Mac 
 .DS_Store
 ./target
