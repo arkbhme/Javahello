@@ -37,6 +37,7 @@
                 </executions>
             </plugin>
         </plugins>
+        <finalName>java-jenkins-docker</finalName>
     </build>
 
     <dependencies>
