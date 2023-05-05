@@ -10,4 +10,4 @@ jobs:
 workflows:
   hello:
     jobs:
-      - hola
+      - saluda
