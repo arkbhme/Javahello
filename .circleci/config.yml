@@ -15,7 +15,13 @@ jobs:
       - run: echo post adios
 
 workflows:
-  hello:
-    jobs: #Los jobs se pueden ejecutar en paralelo o en serie
+  workflow1:
+    jobs: #Los jobs se pueden ejecutar en paralelo o en serie porque no hay dependencia entre ellos
       - saluda
       - despidete
+  workflow2:
+    jobs: 
+      - saluda
+      - despidete:
+        requires:
+          - saluda
