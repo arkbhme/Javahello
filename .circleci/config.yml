@@ -34,5 +34,5 @@ workflows:
           requires:
             - saluda
       - despidete:
-        requires:
-          - approval
+          requires:
+            - approval
