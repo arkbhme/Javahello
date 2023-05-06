@@ -6,7 +6,7 @@ jobs:
     docker:
       - image: cimg/base:stable
     steps:
-      - run: hola #Quitando el echo para que falle el pipeline
+      - run: echo hola 
   despidete:
     docker:
       - image: cimg/base:stable
