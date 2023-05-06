@@ -9,13 +9,13 @@ jobs:
   despidete:
     docker:
       - image: cimg/base:stable
-    steps:
+    steps: #Los steps siempre se ejecuntan en serie
       - run: echo pre adios
       - run: echo adios
       - run: echo post adios
 
 workflows:
   hello:
-    jobs:
+    jobs: #Los jobs se pueden ejecutar en paralelo o en serie
       - saluda
       - despidete
